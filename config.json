@@ -1,0 +1,11 @@
+{
+    "senderAddress": "YOUR_EMAIL_ADDRESS_HERE",
+    "senderPassword": "YOUR_EMAIL_PASSWORD_HERE",
+    "receiveAddressList": [
+        "RECEIVER_ADDRESS_HERE",
+        "ALSO_CAN_ADD_MULTIPLE_ADDRESS",
+        "LIKE_THIS"
+    ],
+    "captureNum": 3,
+    "captureIntervalSec": 1
+}
