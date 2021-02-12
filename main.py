@@ -20,6 +20,8 @@ Config = Config()
 # Initilaize Emailsender Object for Send E-Mail
 EmailSender = EmailSender(Config.sender_address, Config.sender_password)
 
+capture_num = Config.capture_num                    # config.json -> captureNum
+capture_interval = Config.capture_interval_sec      # config.json -> captureIntervalSec
 
 # function : create file name list by time string
 def create_file_names(timestr, file_num):
@@ -46,8 +48,6 @@ while True:
         now = get_now()
 
         print(now + " : SOMEONE DETECTED IN SENSOR")
-        capture_num = Config.capture_num                    # config.json -> captureNum
-        capture_interval = Config.capture_interval_sec      # config.json -> captureIntervalSec
 
         file_names = create_file_names(now, capture_num)
 
